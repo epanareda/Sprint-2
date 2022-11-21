@@ -1,0 +1,59 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.mt-6 {
+    margin-top: 8rem;
+}
+
+.background-pill-right {
+    z-index: -1;
+    top: 25%;
+    left: 25%;
+    width: 150%;
+}
+
+.background-pill-left {
+    z-index: -1;
+    top: 25%;
+    right: 25%;
+    width: 150%;
+}
+
+.tab.active {
+    border-bottom: 0.2rem solid $secondary;
+    font-weight: bold;
+}
+
+.accordion-button::after {
+	background-image: url("/Imagenes/icon-arrow.svg");
+    margin-top: 0.5rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("/Imagenes/icon-arrow.svg");
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 48rem) {
+    .tab-container {
+        border-top: 0.125rem solid rgb(225, 225, 225); //Same color as default bootstrap borders
+        width: 100%;
+    }
+    
+    .tab.active {
+        border-bottom: 0;
+        position: relative;
+    }
+
+    .tab.active::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        left: 25%;
+        border-bottom: 0.2rem solid $secondary;
+    }
+}

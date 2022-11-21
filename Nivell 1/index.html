@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-white bg-white py-5 px-3 fixed-top">
+            <div class="container">
+
+                <!-- LOGO -->
+                <a class="navbar-brand" href="#">
+                    <img src="../Imagenes/logo-bookmark.svg" alt="logo-bookmark">
+                </a>
+
+                <!-- NAV -->
+                <!-- COLLAPSE BUTTON -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../Imagenes/icon-hamburger.svg" alt="navbar-button" class="mb-1">
+                </button>
+
+                <!-- LINKS -->
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto me-3 my-4 my-md-0 small fw-bold">
+                        <li class="nav-item me-auto me-md-4 ms-3 ms-md-0">
+                            <a class="nav-link p-0 mt-2 me-3" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item me-auto me-md-4 ms-3 ms-md-0">
+                            <a class="nav-link p-0 mt-2 me-3" href="#">PIRCING</a>
+                        </li>
+                        <li class="nav-item me-auto me-md-4 ms-3 ms-md-0">
+                            <a class="nav-link p-0 mt-2 me-3" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item me-auto me-md-0 mt-2 mt-md-0">
+                            <a class="nav-link px-4 btn btn-secondary shadow text-light" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="overflow-hidden mt-6 text-center">
+
+        <!-- FIRST SECTION -->
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2">
+
+                <!-- TEXT -->
+                <div class="col order-2 order-md-1 mt-4 my-md-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-5 fw-bold text-md-start mx-1 mx-md-0">A Simple Bookmark Manager</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="my-4 text-muted small text-md-start mx-1 mx-md-0">
+                                A clean and simple inetrface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 me-1 me-md-2">
+                                <p class="p-0 m-0 small">Get in on Chrome</p>
+                            </a>
+                            <a href="#" class="btn btn-light shadow py-1 py-md-2 px-2 px-md-3">
+                                <p class="p-0 m-0 small">Get in on Firefox</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col position-relative order-1 order-md-2 px-4 px-md-0">
+                    <img src="../Imagenes/illustration-hero.svg" alt="illustration-hero" class="" width="100%">
+                    <div class="bg-primary background-pill-right position-absolute h-75 rounded rounded-pill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="container mt-6">
+
+            <!-- TEXT -->
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h2 class="fw-bold mx-1 mx-md-0">Features</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <p class="my-4 text-muted small mx-1 mx-md-0">Our aim is to make it quick and easy for you to acces your favourite websites. Your bookmark sync between devices so you can acces then on the go.</p>
+                </div>
+            </div>
+
+            <!-- TAB SECTION -->
+            <div class="row justify-content-center">
+                <!-- TAB LINKS -->
+                <div class="col col-md-10 col-lg-8 mb-5">
+                    <ul class="nav nav-justified flex-column flex-md-row align-items-center border-bottom border-2">
+                        <li class="nav-item tab-container">
+                            <a class="nav-link text-dark py-3 tab active"  data-bs-toggle="tab" href="#simple-bookmarking">Simple Bookmarking</a>
+                        </li>
+                        <li class="nav-item tab-container">
+                            <a class="nav-link text-dark py-3 tab"  data-bs-toggle="tab" href="#speedy-searching">Speedy Searching</a>
+                        </li>
+                        <li class="nav-item tab-container">
+                            <a class="nav-link text-dark py-3 tab"  data-bs-toggle="tab" href="#easy-sharing">Easy Sharing</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- TAB CONTENT -->
+                <div class="tab-content text-md-start">
+                    <!-- 1ST TAB -->
+                    <div class="tab-pane container fade show active" id="simple-bookmarking">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col position-relative">
+                                <img src="../Imagenes/illustration-features-tab-1.svg" alt="illustration-hero" class="" width="100%">
+                                <div class="bg-primary background-pill-left position-absolute h-100 rounded rounded-pill">
+                                </div>
+                            </div>
+                            <div class="col container mt-6 my-md-auto">
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <h2 class="fw-bold">Bookmark in one click</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <p class="my-4 text-muted small">
+                                            Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control on how you manage your favourite sites.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 me-1 me-md-2">
+                                            <p class="p-0 m-0 small">More Info</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2ND TAB -->
+                    <div class="tab-pane container fade" id="speedy-searching">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col position-relative">
+                                <img src="../Imagenes/illustration-features-tab-2.svg" alt="illustration-hero" class="" width="100%">
+                                <div class="bg-primary background-pill-left position-absolute h-100 rounded rounded-pill">
+                                </div>
+                            </div>
+                            <div class="col container mt-6 my-md-auto">
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <h2 class="fw-bold">Find anything instantly</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <p class="my-4 text-muted small">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aliquam quas voluptatibus nam corporis omnis culpa fuga. Fugit, dolore! Nisi, soluta corrupti labore vel sapiente explicabo commodi dignissimos culpa quo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 me-1 me-md-2">
+                                            <p class="p-0 m-0 small">More Info</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3RD TAB -->
+                    <div class="tab-pane container fade" id="easy-sharing">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col position-relative">
+                                <img src="../Imagenes/illustration-features-tab-3.svg" alt="illustration-hero" class="" width="100%">
+                                <div class="bg-primary background-pill-left position-absolute h-100 rounded rounded-pill">
+                                </div>
+                            </div>
+                            <div class="col container mt-6 my-md-auto">
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <h2 class="fw-bold">Share with the whole world</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <p class="my-4 text-muted small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium consequuntur saepe, omnis velit dolor dicta maxime non voluptate officiis. A repudiandae praesentium magni reprehenderit eos totam non corporis labore.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 me-1 me-md-2">
+                                            <p class="p-0 m-0 small">More Info</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- adapt vertical separation with the absolute position background -->
+        <div class="my-0 my-md-3 my-xl-4 py-0 py-md-3 py-xl-5"></div>
+
+        <!-- DOWNLOAD -->
+        <div class="container mt-6">
+
+            <!-- TEXT -->
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h2 class="fw-bold mx-1 mx-md-0">Download the extension</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <p class="my-4 mb-5 text-muted small mx-1 mx-md-0">
+                        We've got more borwsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARDS -->
+            <div class="row justify-content-center">
+
+                <!-- CHROME -->
+                <div class="col col-md-4 col-xl-3 px-4 px-md-1 px-lg-4">
+                    <div class="card shadow border-0">
+                        <div class="container">
+                            <img src="../Imagenes/logo-chrome.svg" alt="Chrome icon" class="my-4">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Add to Chrome</h6>
+                            <p class="text-muted small mx-1 mx-md-0 mb-4">
+                                Minimun version 62
+                            </p>
+                        </div>
+                        <img src="../Imagenes/bg-dots.svg" alt="line of dots">
+                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 m-4">
+                            <p class="p-0 m-0 small">
+                                Add & Install Extension
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FIREFOX -->
+                <div class="col col-md-4 col-xl-3 mt-4 mt-md-5 px-4 px-md-1 px-lg-4">
+                    <div class="card shadow border-0">
+                        <div class="container">
+                            <img src="../Imagenes/logo-firefox.svg" alt="Firefox icon" class="my-4">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Add to Firefox</h6>
+                            <p class="text-muted small mx-1 mx-md-0 mb-4">
+                                Minimun version 55
+                            </p>
+                        </div>
+                        <img src="../Imagenes/bg-dots.svg" alt="line of dots">
+                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 m-4">
+                            <p class="p-0 m-0 small">
+                                Add & Install Extension
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPERA -->
+                <div class="col col-md-4 col-xl-3 mt-4 mt-md-5 pt-md-5 px-4 px-md-1 px-lg-4">
+                    <div class="card shadow border-0">
+                        <div class="container">
+                            <img src="../Imagenes/logo-opera.svg" alt="Chrome icon" class="my-4">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">Add to Opera</h6>
+                            <p class="text-muted small mx-1 mx-md-0 mb-4">
+                                Minimun version 46
+                            </p>
+                        </div>
+                        <img src="../Imagenes/bg-dots.svg" alt="line of dots">
+                        <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 m-4">
+                            <p class="p-0 m-0 small">
+                                Add & Install Extension
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUESTIONS -->
+        <div class="container mt-6 pt-0 pt-md-5">
+
+            <!-- TEXT -->
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h2 class="fw-bold mx-1 mx-md-0">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <p class="my-4 mb-5 text-muted small mx-1 mx-md-0">
+                        Here ara some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACCORDION -->
+            <div class="row justify-content-center">
+                <div class="col col-md-8 col-lg-6 mx-2 mx-md-0">
+                    <div class="accordion accordion-flush border-top border-bottom" id="accordionPanelsStayOpenExample">
+
+                        <!-- ACCORDION ITEM 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-item-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-item-1" aria-expanded="false" aria-controls="collapse-item-1">
+                                    What is Bookmark?
+                                </button>
+                            </h2>
+                            <div id="collapse-item-1" class="accordion-collapse collapse" aria-labelledby="heading-item-1">
+                                <div class="accordion-body text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui esse beatae officiis tempore tenetur cumque quisquam debitis corrupti libero non animi iusto facere velit repudiandae autem, distinctio possimus rerum necessitatibus.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-item-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-item-2" aria-expanded="false" aria-controls="collapse-item-2">
+                                    How can I request a new browser?
+                                </button>
+                            </h2>
+                            <div id="collapse-item-2" class="accordion-collapse collapse" aria-labelledby="heading-item-2">
+                                <div class="accordion-body text-start">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi pariatur necessitatibus rerum. Rem aspernatur tempore quidem illum ipsum eum recusandae libero debitis temporibus aliquid, eaque qui minus iure perferendis omnis.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-item-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-item-3" aria-expanded="false" aria-controls="collapse-item-3">
+                                    Is there a mobile app?
+                                </button>
+                            </h2>
+                            <div id="collapse-item-3" class="accordion-collapse collapse" aria-labelledby="heading-item-3">
+                                <div class="accordion-body text-start">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptas aliquid placeat autem tempore fugit odit ad possimus quas, excepturi mollitia quia asperiores rerum ab dolorem consequuntur laborum enim itaque.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACCORDION ITEM 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-item-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-item-4" aria-expanded="false" aria-controls="collapse-item-4">
+                                    What about other Chromium browser?
+                                </button>
+                            </h2>
+                            <div id="collapse-item-4" class="accordion-collapse collapse" aria-labelledby="heading-item-4">
+                                <div class="accordion-body text-start">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, dicta aut a repellendus harum ipsum ipsa dolorem enim nemo nobis quaerat! Impedit temporibus cum maxime doloremque tenetur harum debitis animi?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-8 col-lg-6">
+                    <a href="#" class="btn btn-primary shadow-sm py-1 py-md-2 px-2 px-md-3 m-4">
+                        <p class="p-0 m-0 small">
+                            More Info
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container mt-6"></footer>
+</body>
+</html>
