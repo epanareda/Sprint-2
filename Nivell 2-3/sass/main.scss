@@ -1,0 +1,270 @@
+// VARIABLES
+// COLORS
+$primary: #5265E1;
+$secondary: #FA5959;
+$dark: #11173f;
+
+// IMAGES
+$accordion-button-icon: url('../Imagenes/icon-arrow.svg');
+$accordion-button-active-icon: url('../Imagenes/icon-arrow-active.svg');
+$form-feedback-icon-invalid: url('../Imagenes/icon-error.svg');
+
+// NAV BAR FOCUS REMOVED
+$navbar-toggler-focus-width: 0;
+$navbar-toggler-transition: 0;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+// NAVBAR
+.navbar-collapse-elements-container {
+    div {
+        visibility: hidden;
+        width: 0;
+    }
+}
+
+// MAIN
+.mt-6 {
+    margin-top: 8rem;
+}
+
+// BACKGROUND PILLS
+.send-back {
+    z-index: -1;
+}
+
+.background-pill-right {
+    top: 25%;
+    left: 25%;
+    width: 150%;
+}
+
+.background-pill-left {
+    top: 25%;
+    right: 25%;
+    width: 150%;
+}
+
+// TAB
+.tab.active {
+    border-bottom: 0.2rem solid $secondary;
+    font-weight: bold;
+}
+
+// CARDS
+// I styled this part like this in order to make use of the @extend inheritance classe, as is required in the sprint.
+.card-container {
+    @extend .col;
+    @extend .col-md-4;
+    @extend .col-xl-3;
+    @extend .px-4;
+    @extend .px-md-1;
+    @extend .px-lg-4;
+}
+
+.card-container:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.card-container:nth-child(3) {
+    margin-top: 4rem;
+}
+
+// ACCORDION
+.accordion-button:not(.collapsed) {
+    box-shadow: 0 0.25rem#FFF;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 -.25rem;
+  }
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: black;
+}
+
+.accordion-button::after {
+    margin-top: 0.5rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+// FOOTER
+.footer-text-joined {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+
+// FORM
+.send-front {
+    z-index: 1;
+}
+
+
+.invalid-feedback::after {
+	background-image: url("../Imagenes/icon-arrow.svg");
+    margin-top: 0.5rem;
+}
+
+
+// HOVERS
+.accordion-button:hover, .accordion-button:not(.collapsed):hover  {
+    color: $secondary;
+    transition: all 0.4s ease-in-out;
+}
+
+.facebook-icon:hover > path, 
+.twitter-icon:hover > path {
+    fill: $secondary;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-primary:hover > p {
+    color: $primary;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-light:hover {
+    background-color: white;
+    border-color: black;
+    @extend .shadow-sm;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-secondary:hover > p,
+.nav-link:hover,
+.tab:hover > p {
+    color: $secondary;
+    transition: all 0.4s ease-in-out;
+}
+
+.tab.active:hover > p {
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+
+// FOR SMALL DEVICES
+@media only screen and (max-width: 48rem) {
+
+    // NAVBAR
+    .navbar-collapse-elements-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(17, 23, 63, 0.95);
+        transition: all 0.4s;
+        div {
+            visibility: visible;
+            width: 33.75rem;
+            margin: 0 auto;
+            margin-top: 2.9rem;
+            padding-right: 1rem;
+        }
+    }
+
+    .nav-networks {
+        position: absolute;
+        top: 75vh;
+        width: 100% !important;
+    }
+
+    .nav-links-container {
+        height: 55vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 !important;
+        margin-top: 5vh !important;
+        margin-bottom: 45vh !important;
+        li {
+            border-top: 0.01rem solid rgb(211, 211, 211, 0.5);
+            width: 75%;
+            height: 100%;
+            margin: 0 auto !important;
+            display: flex;
+            align-items: center;
+            a {
+                margin: 0 auto !important;
+                p {
+                    color: white;
+                    text-align: center;
+                }
+            }
+
+            a:hover {
+                p {
+                    color: $secondary;
+                    transition: all 0.4s;
+                }
+            }
+        }
+
+        li:nth-child(4) {
+            a {
+                width: 100%;
+                background-color: transparent;
+                border-color: white;
+                border-width: 0.1rem;
+            }
+
+            a:hover {
+                border-color: $secondary;
+            }
+        }
+    }
+
+    // TAB
+    .tab-container {
+        border-top: 0.125rem solid rgb(225, 225, 225); //Same color as default bootstrap borders
+        width: 100%;
+    }
+    
+    .tab.active {
+        border-bottom: 0;
+        position: relative;
+    }
+
+    .tab.active::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        left: 25%;
+        border-bottom: 0.2rem solid $secondary;
+    }
+    
+    // CARD
+    .card-container:nth-child(2), .card-container:nth-child(3) {
+        margin-top: 1.5rem;
+    }
+}
+
+// FOR EXTRA SMALL DEVICES
+@media only screen and (max-width: 36.4rem) {
+    .navbar-collapse-elements-container{
+        div{
+            width: auto;
+            margin-left: 1.75rem;
+            margin-right: 1.75rem;
+        }
+    }
+}
